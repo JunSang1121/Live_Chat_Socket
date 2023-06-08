@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.chat.Live_Chat.chat_test.userTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-06-07T08:15:28" hostname="DESKTOP-UDR9I5L" time="0.283">
+  <properties/>
+  <testcase name="create_test()" classname="com.chat.Live_Chat.chat_test.userTest" time="0.283"/>
+  <system-out><![CDATA[17:15:20.113 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Neither @ContextConfiguration nor @ContextHierarchy found for test class [userTest]: using SpringBootContextLoader
+17:15:20.121 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader -- Could not detect default resource locations for test class [com.chat.Live_Chat.chat_test.userTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+17:15:20.126 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.chat.Live_Chat.chat_test.userTest]: userTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+17:15:20.169 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Using ContextCustomizers for test class [userTest]: [DisableObservabilityContextCustomizer, PropertyMappingContextCustomizer, Customizer, ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, TestRestTemplateContextCustomizer]
+17:15:20.279 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider -- Identified candidate component class: file [C:\Users\LG\Desktop\Live_Chat\build\classes\java\main\com\chat\Live_Chat\LiveChatApplication.class]
+17:15:20.281 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.chat.Live_Chat.LiveChatApplication for test class com.chat.Live_Chat.chat_test.userTest
+17:15:20.432 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Using TestExecutionListeners for test class [userTest]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, TransactionalTestExecutionListener, SqlScriptsTestExecutionListener, EventPublishingTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener, ResetMocksTestExecutionListener]
+17:15:20.434 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener -- Before test class: class [userTest], class annotated with @DirtiesContext [false] with mode [null]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.0.6)
+
+2023-06-07T17:15:20.784+09:00  INFO 6432 --- [    Test worker] com.chat.Live_Chat.chat_test.userTest    : Starting userTest using Java 18.0.1.1 with PID 6432 (started by LG in C:\Users\LG\Desktop\Live_Chat)
+2023-06-07T17:15:20.786+09:00  INFO 6432 --- [    Test worker] com.chat.Live_Chat.chat_test.userTest    : No active profile set, falling back to 1 default profile: "default"
+2023-06-07T17:15:21.809+09:00  INFO 6432 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-07T17:15:21.921+09:00  INFO 6432 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 95 ms. Found 1 JPA repository interfaces.
+2023-06-07T17:15:22.713+09:00  INFO 6432 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-06-07T17:15:23.292+09:00  INFO 6432 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@615efd1c
+2023-06-07T17:15:23.296+09:00  INFO 6432 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-06-07T17:15:23.400+09:00  INFO 6432 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-07T17:15:23.537+09:00  INFO 6432 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-06-07T17:15:24.470+09:00  INFO 6432 --- [    Test worker] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-06-07T17:15:26.062+09:00  INFO 6432 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-07T17:15:26.073+09:00  INFO 6432 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-07T17:15:26.779+09:00  WARN 6432 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-07T17:15:28.841+09:00  INFO 6432 --- [    Test worker] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2023-06-07T17:15:28.847+09:00  INFO 6432 --- [    Test worker] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@3458be63]]
+2023-06-07T17:15:28.849+09:00  INFO 6432 --- [    Test worker] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2023-06-07T17:15:28.881+09:00  INFO 6432 --- [    Test worker] com.chat.Live_Chat.chat_test.userTest    : Started userTest in 8.383 seconds (process running for 10.215)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
